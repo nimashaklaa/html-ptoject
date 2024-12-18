@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trait Extractor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Trait Extractor</h1>
+  <label for="description-input">Description:</label>
+  <textarea id="description-input" name="description" rows="5" cols="40" placeholder="e.g., background: beach, shirt: red t-shirt, hat: straw hat, jewelry: gold necklace, glasses: round glasses"></textarea>
+  <button id="extract-btn">Extract Traits</button>
+
+  <div id="traits">
+    <p><strong>Background:</strong> <span id="background-trait"></span></p>
+    <p><strong>Shirt:</strong> <span id="shirt-trait"></span></p>
+    <p><strong>Hat:</strong> <span id="hat-trait"></span></p>
+    <p><strong>Jewelry:</strong> <span id="jewelry-trait"></span></p>
+    <p><strong>Glasses:</strong> <span id="glasses-trait"></span></p>
+  </div>
+
+  <p id="error-message" class="error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
